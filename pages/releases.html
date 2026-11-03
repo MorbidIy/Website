@@ -123,8 +123,6 @@
             <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Mods</button>
             <button class="filter-btn" data-filter="scripts" role="tab" aria-selected="false">Scripts (.lua)</button>
             <button class="filter-btn" data-filter="textures" role="tab" aria-selected="false">Retextures</button>
-            <button class="filter-btn" data-filter="tools" role="tab" aria-selected="false">Tools</button>
-            <button class="filter-btn" data-filter="misc" role="tab" aria-selected="false">Miscellaneous</button>
           </div>
 
           <!-- Mods Grid -->
@@ -198,26 +196,91 @@
               </footer>
             </article>
 
-            <article class="mod-card-full" data-category="scripts" id="script-loader">
+            <article class="mod-card-full" data-category="scripts" id="auto-hide-hud">
               <header class="mod-card-header">
-                <div class="mod-card-badge">Tool</div>
+                <div class="mod-card-badge">Script</div>
                 <div class="mod-card-meta">
-                  <span class="mod-version">v3.2</span>
-                  <time class="mod-date" datetime="2024-12-20">Dec 20, 2024</time>
+                  <span class="mod-version">v1.2</span>
+                  <time class="mod-date" datetime="2025-02-10">Feb 10, 2025</time>
                 </div>
               </header>
               <div class="mod-card-body">
-                <h2 class="mod-title">Script Loader (Required)</h2>
-                <p class="mod-description">Core script loading framework required for all .lua and .asi mods. Includes ASI loader, Lua runtime, and mod configuration system.</p>
+                <h2 class="mod-title">Auto Hide HUD</h2>
+                <p class="mod-description">Automatically hides HUD elements for a more immersive playthrough. Perfect when paired with First Person POV mod. Configurable fade delay and which elements to hide.</p>
                 <div class="mod-features">
-                  <span class="feature-tag">Required</span>
-                  <span class="feature-tag">ASI Support</span>
-                  <span class="feature-tag">Lua 5.4</span>
+                  <span class="feature-tag">Immersive</span>
+                  <span class="feature-tag">Configurable</span>
+                  <span class="feature-tag">FPV Compatible</span>
                 </div>
               </div>
               <footer class="mod-card-footer">
-                <a href="#" class="btn btn-primary">Download (2.1 MB)</a>
-                <a href="#" class="btn btn-ghost">Changelog</a>
+                <a href="#" class="btn btn-primary">Download (6 KB)</a>
+              </footer>
+            </article>
+
+            <article class="mod-card-full" data-category="scripts" id="hold-to-crouch">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Script</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v1.1</span>
+                  <time class="mod-date" datetime="2025-02-05">Feb 5, 2025</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">Hold to Crouch</h2>
+                <p class="mod-description">Hold the right analog stick (or configured key) to crouch, release to stand. Intuitive stealth movement without toggling. Works on foot and in vehicles.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">Analog Support</span>
+                  <span class="feature-tag">Vehicle Compatible</span>
+                  <span class="feature-tag">No Toggle</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (5 KB)</a>
+              </footer>
+            </article>
+
+            <article class="mod-card-full" data-category="scripts" id="console-commands">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Script</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v1.0</span>
+                  <time class="mod-date" datetime="2025-01-28">Jan 28, 2025</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">Console Commands & Controller Cheats</h2>
+                <p class="mod-description">Multi-command utility for Derpy's Script Loader. Quick cheats for infinite ammo, immortality, weapon spawns, wanted level control, and more — all accessible via controller or keyboard.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">Cheat Menu</span>
+                  <span class="feature-tag">Controller Support</span>
+                  <span class="feature-tag">DSL Required</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (18 KB)</a>
+              </footer>
+            </article>
+
+            <article class="mod-card-full" data-category="scripts" id="quick-teleport">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Script</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v1.2</span>
+                  <time class="mod-date" datetime="2025-01-20">Jan 20, 2025</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">Quick Teleportation Commands</h2>
+                <p class="mod-description">Quick commands to teleport Jimmy to different headquarters and school grounds locations. Save time traveling across Bullworth. Includes all major mission markers and interiors.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">Fast Travel</span>
+                  <span class="feature-tag">All Locations</span>
+                  <span class="feature-tag">Mission Markers</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (9 KB)</a>
               </footer>
             </article>
 
@@ -241,98 +304,6 @@
               <footer class="mod-card-footer">
                 <a href="#" class="btn btn-primary">Download (156 MB)</a>
                 <a href="#" class="btn btn-ghost">Preview</a>
-              </footer>
-            </article>
-
-            <article class="mod-card-full" data-category="textures" id="school-textures">
-              <header class="mod-card-header">
-                <div class="mod-card-badge">Retexture</div>
-                <div class="mod-card-meta">
-                  <span class="mod-version">v2.0</span>
-                  <time class="mod-date" datetime="2024-10-22">Oct 22, 2024</time>
-                </div>
-              </header>
-              <div class="mod-card-body">
-                <h2 class="mod-title">Bullworth Academy HD</h2>
-                <p class="mod-description">Complete school environment retexture. Walls, floors, lockers, and props upscaled to 4K with PBR materials.</p>
-                <div class="mod-features">
-                  <span class="feature-tag">4K PBR</span>
-                  <span class="feature-tag">Full School</span>
-                </div>
-              </div>
-              <footer class="mod-card-footer">
-                <a href="#" class="btn btn-primary">Download (2.3 GB)</a>
-                <a href="#" class="btn btn-ghost">Preview</a>
-              </footer>
-            </article>
-
-            <!-- Tools -->
-            <article class="mod-card-full" data-category="tools" id="txd-tool">
-              <header class="mod-card-header">
-                <div class="mod-card-badge">Tool</div>
-                <div class="mod-card-meta">
-                  <span class="mod-version">v1.5</span>
-                  <time class="mod-date" datetime="2024-12-01">Dec 1, 2024</time>
-                </div>
-              </header>
-              <div class="mod-card-body">
-                <h2 class="mod-title">TXD Texture Tool</h2>
-                <p class="mod-description">Standalone tool for importing/exporting .txd and .dds texture files. Supports batch conversion, mipmap generation, and DXT compression.</p>
-                <div class="mod-features">
-                  <span class="feature-tag">Batch Convert</span>
-                  <span class="feature-tag">DXT Compression</span>
-                  <span class="feature-tag">Mipmaps</span>
-                </div>
-              </div>
-              <footer class="mod-card-footer">
-                <a href="#" class="btn btn-primary">Download (3.4 MB)</a>
-                <a href="#" class="btn btn-ghost">Docs</a>
-              </footer>
-            </article>
-
-            <article class="mod-card-full" data-category="tools" id="script-editor">
-              <header class="mod-card-header">
-                <div class="mod-card-badge">Tool</div>
-                <div class="mod-card-meta">
-                  <span class="mod-version">v2.0</span>
-                  <time class="mod-date" datetime="2024-11-10">Nov 10, 2024</time>
-                </div>
-              </header>
-              <div class="mod-card-body">
-                <h2 class="mod-title">Lua Script Editor</h2>
-                <p class="mod-description">Syntax-highlighted editor for Bully SE Lua scripts. Includes API autocomplete, error checking, and live preview integration.</p>
-                <div class="mod-features">
-                  <span class="feature-tag">Syntax Highlight</span>
-                  <span class="feature-tag">API Autocomplete</span>
-                  <span class="feature-tag">Live Preview</span>
-                </div>
-              </div>
-              <footer class="mod-card-footer">
-                <a href="#" class="btn btn-primary">Download (12 MB)</a>
-                <a href="#" class="btn btn-ghost">GitHub</a>
-              </footer>
-            </article>
-
-            <!-- Misc -->
-            <article class="mod-card-full" data-category="misc" id="save-editor">
-              <header class="mod-card-header">
-                <div class="mod-card-badge">Tool</div>
-                <div class="mod-card-meta">
-                  <span class="mod-version">v1.1</span>
-                  <time class="mod-date" datetime="2024-09-30">Sep 30, 2024</time>
-                </div>
-              </header>
-              <div class="mod-card-body">
-                <h2 class="mod-title">Save File Editor</h2>
-                <p class="mod-description">Edit your Bully SE save files. Modify money, stats, mission progress, unlocked outfits, and collectibles.</p>
-                <div class="mod-features">
-                  <span class="feature-tag">Save Editing</span>
-                  <span class="feature-tag">Backup/Restore</span>
-                </div>
-              </div>
-              <footer class="mod-card-footer">
-                <a href="#" class="btn btn-primary">Download (890 KB)</a>
-                <a href="#" class="btn btn-ghost">Guide</a>
               </footer>
             </article>
           </div>
