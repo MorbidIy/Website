@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Morbidly Mods</title>
+  <meta name="description" content="Contact Morbidly Mods for support, questions, or business inquiries." />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="morbid-header" role="banner">
+    <div class="morbid-header-inner">
+      <div class="morbid-logo" aria-label="Morbidly Mods Home">
+        <a href="../index.html" class="logo-link">
+          <img src="../assets/images/morbidlytitle.png" alt="Morbidly Mods" class="logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+            <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#ff0000">MORBIDLY</text>
+            <text x="0" y="58" font-family="JetBrains Mono, monospace" font-size="10" font-weight="400" fill="#999">MODS</text>
+          </svg>
+        </a>
+      </div>
+      <div class="morbid-search" role="search">
+        <label for="site-search" class="visually-hidden">Search Morbidly Mods</label>
+        <input type="search" id="site-search" placeholder="Search mods, guides, tools..." aria-label="Search" autocomplete="off" />
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        <div class="search-results" id="searchResults" role="listbox" hidden></div>
+      </div>
+      <nav class="morbid-nav" role="navigation" aria-label="Main navigation">
+        <a href="../index.html" class="nav-link" data-page="home">Home</a>
+        <a href="getting-started.html" class="nav-link" data-page="getting-started">Getting Started</a>
+        <a href="releases.html" class="nav-link" data-page="releases">Downloads</a>
+        <a href="gta-services.html" class="nav-link" data-page="gta-services">GTA Services</a>
+        <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer" class="nav-link nav-link--external" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.305-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" fill="currentColor"/></svg>
+        </a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Toggle navigation menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="wrapper" class="layout-wrapper">
+    <aside id="sidebar" class="retro-sidebar" role="navigation" aria-label="Documentation navigation">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <img src="../assets/images/morbidlytitle.png" alt="" class="sidebar-logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+            <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700" fill="#ff0000">MORBIDLY</text>
+            <text x="0" y="56" font-family="JetBrains Mono, monospace" font-size="9" font-weight="400" fill="#999">MODS</text>
+          </svg>
+        </div>
+        <button class="sidebar-close" aria-label="Close sidebar" hidden><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      </div>
+      <nav class="sidebar-nav">
+        <section class="sidebar-section" aria-labelledby="section-main">
+          <h3 id="section-main" class="sidebar-section-title">Main Hub</h3>
+          <ul class="sidebar-list">
+            <li><a href="../index.html" class="sidebar-link" data-page="home">Welcome</a></li>
+            <li><a href="tos.html" class="sidebar-link" data-page="tos">Terms of Service</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-bully">
+          <h3 id="section-bully" class="sidebar-section-title">Bully: Scholarship Edition (PC)</h3>
+          <ul class="sidebar-list">
+            <li><a href="getting-started.html" class="sidebar-link" data-page="getting-started">Getting Started</a></li>
+            <li><a href="releases.html" class="sidebar-link" data-page="releases">Downloads</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-gta">
+          <h3 id="section-gta" class="sidebar-section-title">Grand Theft Auto V (XBOX SERIES X/S)</h3>
+          <ul class="sidebar-list">
+            <li><a href="gta-services.html" class="sidebar-link" data-page="gta-services">Account Services</a></li>
+            <li><a href="gta-show.html" class="sidebar-link" data-page="gta-show">Account Showcase</a></li>
+            <li><a href="account-security.html" class="sidebar-link" data-page="account-security">Account Security</a></li>
+            <li><a href="purchase.html" class="sidebar-link" data-page="purchase">Purchase</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-tools">
+          <h3 id="section-tools" class="sidebar-section-title">Utilities & Troubleshooting</h3>
+          <ul class="sidebar-list">
+            <li><a href="tools.html" class="sidebar-link" data-page="tools">Standalone Tools</a></li>
+            <li><a href="favorites.html" class="sidebar-link" data-page="favorites">Endorsed Mods & Favorites</a></li>
+            <li><a href="troubleshooting.html" class="sidebar-link" data-page="troubleshooting">Known Issues & Fixes</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-support">
+          <h3 id="section-support" class="sidebar-section-title">Support & Dev Info</h3>
+          <ul class="sidebar-list">
+            <li><a href="contact.html" class="sidebar-link active" data-page="contact">Contact Information</a></li>
+            <li><a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer" class="sidebar-link sidebar-link--external">Buy Me Coffee?</a></li>
+          </ul>
+        </section>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-logo">
+          <img src="../assets/images/morbiddunce.png" alt="" class="footer-logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="30" r="28" stroke="#ff0000" stroke-width="2" fill="none"/>
+            <text x="30" y="36" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700" fill="#ff0000">M</text>
+          </svg>
+        </div>
+        <p class="sidebar-footer-text">Powered by Morbidly</p>
+      </div>
+    </aside>
+    <div class="sidebar-overlay" aria-hidden="true"></div>
+
+    <main id="entries" class="entries-grid" role="main">
+      <article class="content-page">
+        <header class="page-header">
+          <div class="page-breadcrumbs">
+            <a href="../index.html">Home</a>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span aria-current="page">Contact</span>
+          </div>
+          <h1 class="page-title">Contact & Support</h1>
+          <p class="page-description">Get in touch for support, questions, or business inquiries. Check the FAQ below before reaching out.</p>
+        </header>
+
+        <div class="page-content">
+          <!-- Contact Channels -->
+          <section class="content-section" id="channels">
+            <h2>Official Channels</h2>
+            <div class="channels-grid">
+              <a href="https://discord.gg/Morbidly" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.443.764-.681 1.161a19.275 19.275 0 0 0-5.415 0 69.22 69.22 0 0 0-.687-1.171.077.077 0 0 0-.079-.037 19.736 19.736 0 0 0-4.886 1.515.068.068 0 0 0-.032.027C.533 9.046 0 13.692 0 18.5c0 1.1.9 2 2 2h1.553c.979 0 1.792-.575 2.017-1.372a20.928 20.928 0 0 0 4.901-1.833.077.077 0 0 1 .083-.028c.586.062 1.176.106 1.77.127.22 0 .455-.006.681-.023.428.355.894.675 1.388.942.048.026.111.026.159 0 .367-.2.82-.503 1.232-.928.6-.02 1.185-.054 1.769-.123a.077.077 0 0 1 .084.028c1.178.477 2.453.918 3.802 1.219.211.071.442.06 0.662-.018a.072.072 0 0 0 .031-.027 19.9 19.9 0 0 0 1.721-4.939c0-3.311-.302-6.487-.886-9.115a.061.061 0 0 0-.031-.027z"/><circle cx="8.966" cy="12.978" r="1.196"/><circle cx="15.701" cy="12.814" r="1.196"/></svg>
+                </div>
+                <h3>Discord</h3>
+                <p>Best for real-time support and community discussion</p>
+                <span class="channel-badge">Recommended</span>
+              </a>
+
+              <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.305-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </div>
+                <h3>GitHub</h3>
+                <p>Bug reports, feature requests, and source code</p>
+              </a>
+
+              <a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                </div>
+                <h3>Ko-fi</h3>
+                <p>Support development with a donation</p>
+              </a>
+
+              <a href="https://instagram.com/Morbidly" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </div>
+                <h3>Instagram</h3>
+                <p>Updates, screenshots, and announcements</p>
+              </a>
+
+              <a href="https://x.com/MorbidlyMods" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                </div>
+                <h3>Twitter / X</h3>
+                <p>Quick updates and community posts</p>
+              </a>
+
+              <a href="https://nexusmods.com/profile/DeadFvck" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Nexus Mods</h3>
+                <p>Mod downloads and community forum</p>
+              </a>
+            </div>
+          </section>
+
+          <!-- FAQ -->
+          <section class="content-section" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <details class="faq-item">
+              <summary>How do I report a bug or issue with a mod?</summary>
+              <p>Please create an issue on our <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer">GitHub repository</a> with the following information: mod name, version, game version, steps to reproduce, and any error messages or logs.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Can I request a custom mod or feature?</summary>
+              <p>Feature requests can be submitted on GitHub. Custom mod commissions are not currently accepted due to time constraints.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Are your mods compatible with other mods?</summary>
+              <p>Most mods are compatible with each other, but conflicts can occur. Always test mods individually first. Check the <a href="troubleshooting.html">Troubleshooting</a> page for known conflicts.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Do you support console versions of Bully or GTA?</summary>
+              <p>No, all mods and tools are for PC (Steam) versions only. Console modding is not supported.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Can I redistribute or repack your mods?</summary>
+              <p>Please do not redistribute mods without permission. Link to the official download page instead. See <a href="tos.html">Terms of Service</a> for details.</p>
+            </details>
+            <details class="faq-item">
+              <summary>How can I support your work?</summary>
+              <p>Donations via <a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer">Ko-fi</a> are appreciated. Sharing mods with friends, reporting bugs, and contributing on GitHub also helps!</p>
+            </details>
+          </section>
+
+          <!-- Contact Form -->
+          <section class="content-section" id="contact-form-section">
+            <h2>Send a Message</h2>
+            <form class="contact-form" id="contactForm" action="#" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a topic</option>
+                  <option value="support">Mod Support / Bug Report</option>
+                  <option value="feature">Feature Request</option>
+                  <option value="business">Business Inquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Describe your issue or question..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </section>
+        </div>
+      </article>
+
+      <nav class="retro-nav-container" aria-label="Page navigation">
+        <a href="tos.html" class="retro-nav-btn btn-right" data-transition="slide">
+          <div class="nav-btn-text">
+            <span class="nav-label">Next</span>
+            <span class="nav-title">Terms of Service</span>
+          </div>
+          <span class="nav-arrow" aria-hidden="true">›</span>
+        </a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="morbid-footer" role="contentinfo">
+    <div class="morbid-footer-inner">
+      <div class="morbid-logo">
+        <img src="../assets/images/morbidlymods.png" alt="Morbidly Mods" class="footer-logo-img" />
+        <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+          <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#ff0000">MORBIDLY</text>
+          <text x="0" y="58" font-family="JetBrains Mono, monospace" font-size="10" font-weight="400" fill="#999">MODS</text>
+        </svg>
+      </div>
+      <div class="footer-links">
+        <nav aria-label="Footer navigation">
+          <a href="contact.html">Contact</a>
+          <a href="tos.html">Terms of Service</a>
+          <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://discord.gg/Morbidly" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer">Support</a>
+        </nav>
+      </div>
+      <div class="footer-copyright">
+        <p>1998–2025 All Rights Reserved.</p>
+        <p id="c"><a href="#">© Morbidly</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+  <script>
+    // Contact form handling
+    (function() {
+      const form = document.getElementById('contactForm');
+      if (!form) return;
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        const originalText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+
+        // Simulate form submission
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        // Show success message
+        const msg = document.createElement('div');
+        msg.className = 'form-message success';
+        msg.textContent = 'Message sent! We\'ll get back to you soon.';
+        msg.style.cssText = 'padding:1rem;background:rgba(255,0,0,0.1);border:1px solid var(--color-accent);border-radius:var(--radius-md);color:var(--color-accent);margin-top:1rem;';
+        form.appendChild(msg);
+
+        form.reset();
+        btn.disabled = false;
+        btn.textContent = originalText;
+
+        setTimeout(() => msg.remove(), 5000);
+      });
+    })();
+  </script>
+</body>
+</html>

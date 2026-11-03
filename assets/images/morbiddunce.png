@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="dunceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#111;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="url(#dunceGrad)" stroke="#ff0000" stroke-width="3"/>
+  <circle cx="60" cy="60" r="52" stroke="#ff0000" stroke-width="1" fill="none" opacity="0.3"/>
+  <text x="60" y="72" text-anchor="middle" font-family="Space Grotesk, Impact, sans-serif" font-size="48" font-weight="700" fill="#ff0000">M</text>
+  <ellipse cx="60" cy="25" rx="30" ry="8" fill="#ff0000" opacity="0.2"/>
+</svg>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mod Downloads — Morbidly Mods</title>
+  <meta name="description" content="Complete library of Bully: Scholarship Edition mods, scripts, and retextures available for download." />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="morbid-header" role="banner">
+    <div class="morbid-header-inner">
+      <div class="morbid-logo" aria-label="Morbidly Mods Home">
+        <a href="../index.html" class="logo-link">
+          <img src="../assets/images/morbidlytitle.png" alt="Morbidly Mods" class="logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+            <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#ff0000">MORBIDLY</text>
+            <text x="0" y="58" font-family="JetBrains Mono, monospace" font-size="10" font-weight="400" fill="#999">MODS</text>
+          </svg>
+        </a>
+      </div>
+      <div class="morbid-search" role="search">
+        <label for="site-search" class="visually-hidden">Search Morbidly Mods</label>
+        <input type="search" id="site-search" placeholder="Search mods, guides, tools..." aria-label="Search" autocomplete="off" />
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        <div class="search-results" id="searchResults" role="listbox" hidden></div>
+      </div>
+      <nav class="morbid-nav" role="navigation" aria-label="Main navigation">
+        <a href="../index.html" class="nav-link" data-page="home">Home</a>
+        <a href="getting-started.html" class="nav-link" data-page="getting-started">Getting Started</a>
+        <a href="releases.html" class="nav-link active" data-page="releases">Downloads</a>
+        <a href="gta-services.html" class="nav-link" data-page="gta-services">GTA Services</a>
+        <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer" class="nav-link nav-link--external" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.305-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" fill="currentColor"/></svg>
+        </a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Toggle navigation menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="wrapper" class="layout-wrapper">
+    <aside id="sidebar" class="retro-sidebar" role="navigation" aria-label="Documentation navigation">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <img src="../assets/images/morbidlytitle.png" alt="" class="sidebar-logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+            <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700" fill="#ff0000">MORBIDLY</text>
+            <text x="0" y="56" font-family="JetBrains Mono, monospace" font-size="9" font-weight="400" fill="#999">MODS</text>
+          </svg>
+        </div>
+        <button class="sidebar-close" aria-label="Close sidebar" hidden><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      </div>
+      <nav class="sidebar-nav">
+        <section class="sidebar-section" aria-labelledby="section-main">
+          <h3 id="section-main" class="sidebar-section-title">Main Hub</h3>
+          <ul class="sidebar-list">
+            <li><a href="../index.html" class="sidebar-link" data-page="home">Welcome</a></li>
+            <li><a href="tos.html" class="sidebar-link" data-page="tos">Terms of Service</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-bully">
+          <h3 id="section-bully" class="sidebar-section-title">Bully: Scholarship Edition (PC)</h3>
+          <ul class="sidebar-list">
+            <li><a href="getting-started.html" class="sidebar-link" data-page="getting-started">Getting Started</a></li>
+            <li><a href="releases.html" class="sidebar-link active" data-page="releases">Downloads</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-gta">
+          <h3 id="section-gta" class="sidebar-section-title">Grand Theft Auto V (XBOX SERIES X/S)</h3>
+          <ul class="sidebar-list">
+            <li><a href="gta-services.html" class="sidebar-link" data-page="gta-services">Account Services</a></li>
+            <li><a href="gta-show.html" class="sidebar-link" data-page="gta-show">Account Showcase</a></li>
+            <li><a href="account-security.html" class="sidebar-link" data-page="account-security">Account Security</a></li>
+            <li><a href="purchase.html" class="sidebar-link" data-page="purchase">Purchase</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-tools">
+          <h3 id="section-tools" class="sidebar-section-title">Utilities & Troubleshooting</h3>
+          <ul class="sidebar-list">
+            <li><a href="tools.html" class="sidebar-link" data-page="tools">Standalone Tools</a></li>
+            <li><a href="favorites.html" class="sidebar-link" data-page="favorites">Endorsed Mods & Favorites</a></li>
+            <li><a href="troubleshooting.html" class="sidebar-link" data-page="troubleshooting">Known Issues & Fixes</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-support">
+          <h3 id="section-support" class="sidebar-section-title">Support & Dev Info</h3>
+          <ul class="sidebar-list">
+            <li><a href="contact.html" class="sidebar-link" data-page="contact">Contact Information</a></li>
+            <li><a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer" class="sidebar-link sidebar-link--external">Buy Me Coffee?</a></li>
+          </ul>
+        </section>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-logo">
+          <img src="../assets/images/morbiddunce.png" alt="" class="footer-logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="30" r="28" stroke="#ff0000" stroke-width="2" fill="none"/>
+            <text x="30" y="36" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700" fill="#ff0000">M</text>
+          </svg>
+        </div>
+        <p class="sidebar-footer-text">Powered by Morbidly</p>
+      </div>
+    </aside>
+    <div class="sidebar-overlay" aria-hidden="true"></div>
+
+    <main id="entries" class="entries-grid" role="main">
+      <article class="content-page">
+        <header class="page-header">
+          <div class="page-breadcrumbs">
+            <a href="../index.html">Home</a>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span aria-current="page">Downloads</span>
+          </div>
+          <h1 class="page-title">Mod Downloads</h1>
+          <p class="page-description">Complete library of available mods, scripts, and retextures for Bully: Scholarship Edition. Click any mod to view details and download.</p>
+        </header>
+
+        <div class="page-content">
+          <!-- Category Filters -->
+          <div class="category-filters" role="tablist" aria-label="Mod categories">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Mods</button>
+            <button class="filter-btn" data-filter="scripts" role="tab" aria-selected="false">Scripts (.lua)</button>
+            <button class="filter-btn" data-filter="textures" role="tab" aria-selected="false">Retextures</button>
+            <button class="filter-btn" data-filter="tools" role="tab" aria-selected="false">Tools</button>
+            <button class="filter-btn" data-filter="misc" role="tab" aria-selected="false">Miscellaneous</button>
+          </div>
+
+          <!-- Mods Grid -->
+          <div class="mods-grid" id="modsGrid">
+            <!-- Scripts -->
+            <article class="mod-card-full" data-category="scripts" id="kick-me-sign">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Script</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v2.1</span>
+                  <time class="mod-date" datetime="2025-01-15">Jan 15, 2025</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">Kick Me Sign Mod</h2>
+                <p class="mod-description">Adds the iconic "Kick Me" sign to Jimmy's back. Based on CombineSlayer24's original work, updated with full controller support, new animations, and configurable settings.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">Controller Support</span>
+                  <span class="feature-tag">Configurable</span>
+                  <span class="feature-tag">Lightweight</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (12 KB)</a>
+                <a href="https://github.com/CombineSlayer24/Bully-GiveKickMeSign" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Source</a>
+              </footer>
+            </article>
+
+            <article class="mod-card-full" data-category="scripts" id="pitbull-bodyguards">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Script</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v1.3</span>
+                  <time class="mod-date" datetime="2025-01-08">Jan 8, 2025</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">Pitbull Bodyguards</h2>
+                <p class="mod-description">Spawns loyal pitbull companions that follow Jimmy and attack enemies. Custom AI behaviors, configurable aggression levels, and whistle recall command. Inspired by seigimonogatari's mod.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">Custom AI</span>
+                  <span class="feature-tag">Configurable</span>
+                  <span class="feature-tag">Whistle Recall</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (45 KB)</a>
+                <a href="https://libertycity.net/files/bully-scholarship-edition/208677-bodyguard-pitbull-mod-anniversary.html" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Original</a>
+              </footer>
+            </article>
+
+            <article class="mod-card-full" data-category="scripts" id="smoking-regen">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Script</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v1.0</span>
+                  <time class="mod-date" datetime="2025-01-02">Jan 2, 2025</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">Smoking Regen HP</h2>
+                <p class="mod-description">Controller-remapped version of tupakka1's script. Smoking cigarettes now regenerates health over time. Configurable regen rate and cooldown.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">Controller Remapped</span>
+                  <span class="feature-tag">Configurable</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (8 KB)</a>
+                <a href="https://www.nexusmods.com/bullyscholarshipedition/mods/108" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Original</a>
+              </footer>
+            </article>
+
+            <article class="mod-card-full" data-category="scripts" id="script-loader">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Tool</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v3.2</span>
+                  <time class="mod-date" datetime="2024-12-20">Dec 20, 2024</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">Script Loader (Required)</h2>
+                <p class="mod-description">Core script loading framework required for all .lua and .asi mods. Includes ASI loader, Lua runtime, and mod configuration system.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">Required</span>
+                  <span class="feature-tag">ASI Support</span>
+                  <span class="feature-tag">Lua 5.4</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (2.1 MB)</a>
+                <a href="#" class="btn btn-ghost">Changelog</a>
+              </footer>
+            </article>
+
+            <!-- Textures -->
+            <article class="mod-card-full" data-category="textures" id="hd-jimmy">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Retexture</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v1.0</span>
+                  <time class="mod-date" datetime="2024-11-15">Nov 15, 2024</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">HD Jimmy Hopkins</h2>
+                <p class="mod-description">High-resolution retexture for Jimmy's default outfit. 4K textures with normal maps. Compatible with all outfit mods.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">4K Resolution</span>
+                  <span class="feature-tag">Normal Maps</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (156 MB)</a>
+                <a href="#" class="btn btn-ghost">Preview</a>
+              </footer>
+            </article>
+
+            <article class="mod-card-full" data-category="textures" id="school-textures">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Retexture</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v2.0</span>
+                  <time class="mod-date" datetime="2024-10-22">Oct 22, 2024</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">Bullworth Academy HD</h2>
+                <p class="mod-description">Complete school environment retexture. Walls, floors, lockers, and props upscaled to 4K with PBR materials.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">4K PBR</span>
+                  <span class="feature-tag">Full School</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (2.3 GB)</a>
+                <a href="#" class="btn btn-ghost">Preview</a>
+              </footer>
+            </article>
+
+            <!-- Tools -->
+            <article class="mod-card-full" data-category="tools" id="txd-tool">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Tool</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v1.5</span>
+                  <time class="mod-date" datetime="2024-12-01">Dec 1, 2024</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">TXD Texture Tool</h2>
+                <p class="mod-description">Standalone tool for importing/exporting .txd and .dds texture files. Supports batch conversion, mipmap generation, and DXT compression.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">Batch Convert</span>
+                  <span class="feature-tag">DXT Compression</span>
+                  <span class="feature-tag">Mipmaps</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (3.4 MB)</a>
+                <a href="#" class="btn btn-ghost">Docs</a>
+              </footer>
+            </article>
+
+            <article class="mod-card-full" data-category="tools" id="script-editor">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Tool</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v2.0</span>
+                  <time class="mod-date" datetime="2024-11-10">Nov 10, 2024</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">Lua Script Editor</h2>
+                <p class="mod-description">Syntax-highlighted editor for Bully SE Lua scripts. Includes API autocomplete, error checking, and live preview integration.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">Syntax Highlight</span>
+                  <span class="feature-tag">API Autocomplete</span>
+                  <span class="feature-tag">Live Preview</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (12 MB)</a>
+                <a href="#" class="btn btn-ghost">GitHub</a>
+              </footer>
+            </article>
+
+            <!-- Misc -->
+            <article class="mod-card-full" data-category="misc" id="save-editor">
+              <header class="mod-card-header">
+                <div class="mod-card-badge">Tool</div>
+                <div class="mod-card-meta">
+                  <span class="mod-version">v1.1</span>
+                  <time class="mod-date" datetime="2024-09-30">Sep 30, 2024</time>
+                </div>
+              </header>
+              <div class="mod-card-body">
+                <h2 class="mod-title">Save File Editor</h2>
+                <p class="mod-description">Edit your Bully SE save files. Modify money, stats, mission progress, unlocked outfits, and collectibles.</p>
+                <div class="mod-features">
+                  <span class="feature-tag">Save Editing</span>
+                  <span class="feature-tag">Backup/Restore</span>
+                </div>
+              </div>
+              <footer class="mod-card-footer">
+                <a href="#" class="btn btn-primary">Download (890 KB)</a>
+                <a href="#" class="btn btn-ghost">Guide</a>
+              </footer>
+            </article>
+          </div>
+
+          <!-- No Results Message -->
+          <div class="no-results" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <p>No mods match the selected filter.</p>
+          </div>
+        </div>
+      </article>
+
+      <nav class="retro-nav-container" aria-label="Page navigation">
+        <a href="gta-services.html" class="retro-nav-btn btn-right" data-transition="slide">
+          <div class="nav-btn-text">
+            <span class="nav-label">Next</span>
+            <span class="nav-title">GTA V Services</span>
+          </div>
+          <span class="nav-arrow" aria-hidden="true">›</span>
+        </a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="morbid-footer" role="contentinfo">
+    <div class="morbid-footer-inner">
+      <div class="morbid-logo">
+        <img src="../assets/images/morbidlymods.png" alt="Morbidly Mods" class="footer-logo-img" />
+        <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+          <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#ff0000">MORBIDLY</text>
+          <text x="0" y="58" font-family="JetBrains Mono, monospace" font-size="10" font-weight="400" fill="#999">MODS</text>
+        </svg>
+      </div>
+      <div class="footer-links">
+        <nav aria-label="Footer navigation">
+          <a href="contact.html">Contact</a>
+          <a href="tos.html">Terms of Service</a>
+          <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://discord.gg/Morbidly" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer">Support</a>
+        </nav>
+      </div>
+      <div class="footer-copyright">
+        <p>1998–2025 All Rights Reserved.</p>
+        <p id="c"><a href="#">© Morbidly</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+  <script>
+    // Category filter functionality
+    (function() {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const modCards = document.querySelectorAll('.mod-card-full');
+      const noResults = document.querySelector('.no-results');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.dataset.filter;
+
+          // Update active button
+          filterBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+
+          // Filter cards
+          let visibleCount = 0;
+          modCards.forEach(card => {
+            const category = card.dataset.category;
+            const show = filter === 'all' || category === filter;
+            card.style.display = show ? 'flex' : 'none';
+            if (show) visibleCount++;
+          });
+
+          // Show/hide no results
+          noResults.hidden = visibleCount > 0;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

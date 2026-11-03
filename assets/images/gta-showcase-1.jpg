@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="gtaGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#gtaGrad1)"/>
+  <rect x="50" y="40" width="300" height="140" rx="8" stroke="#ff0000" stroke-width="2" fill="none" opacity="0.3"/>
+  <rect x="70" y="60" width="120" height="80" rx="4" fill="#ff0000" opacity="0.2"/>
+  <rect x="210" y="60" width="120" height="80" rx="4" fill="#ff0000" opacity="0.2"/>
+  <text x="200" y="190" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="600" fill="#ff0000" opacity="0.7">NIGHTCLUB EMPIRE</text>
+  <text x="200" y="210" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#444">LEVEL 8000  •  $2.1B</text>
+</svg>

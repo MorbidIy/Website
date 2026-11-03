@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="gtaGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#gtaGrad2)"/>
+  <g fill="#ff0000" opacity="0.15">
+    <rect x="60" y="50" width="80" height="40" rx="3"/>
+    <rect x="150" y="50" width="80" height="40" rx="3"/>
+    <rect x="260" y="50" width="80" height="40" rx="3"/>
+    <rect x="60" y="100" width="80" height="40" rx="3"/>
+    <rect x="150" y="100" width="80" height="40" rx="3"/>
+    <rect x="260" y="100" width="80" height="40" rx="3"/>
+    <rect x="60" y="150" width="80" height="40" rx="3"/>
+    <rect x="150" y="150" width="80" height="40" rx="3"/>
+    <rect x="260" y="150" width="80" height="40" rx="3"/>
+  </g>
+  <text x="200" y="190" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="600" fill="#ff0000" opacity="0.7">VEHICLE COLLECTION</text>
+  <text x="200" y="210" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#444">600+ VEHICLES  •  MAXED GARAGES</text>
+</svg>

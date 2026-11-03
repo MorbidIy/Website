@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting Started — Morbidly Mods</title>
+  <meta name="description" content="Step-by-step installation guides for Bully: Scholarship Edition mods, scripts, and tools." />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="morbid-header" role="banner">
+    <div class="morbid-header-inner">
+      <div class="morbid-logo" aria-label="Morbidly Mods Home">
+        <a href="../index.html" class="logo-link">
+          <img src="../assets/images/morbidlytitle.png" alt="Morbidly Mods" class="logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+            <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#ff0000">MORBIDLY</text>
+            <text x="0" y="58" font-family="JetBrains Mono, monospace" font-size="10" font-weight="400" fill="#999">MODS</text>
+          </svg>
+        </a>
+      </div>
+      <div class="morbid-search" role="search">
+        <label for="site-search" class="visually-hidden">Search Morbidly Mods</label>
+        <input type="search" id="site-search" placeholder="Search mods, guides, tools..." aria-label="Search" autocomplete="off" />
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        <div class="search-results" id="searchResults" role="listbox" hidden></div>
+      </div>
+      <nav class="morbid-nav" role="navigation" aria-label="Main navigation">
+        <a href="../index.html" class="nav-link" data-page="home">Home</a>
+        <a href="getting-started.html" class="nav-link active" data-page="getting-started">Getting Started</a>
+        <a href="releases.html" class="nav-link" data-page="releases">Downloads</a>
+        <a href="gta-services.html" class="nav-link" data-page="gta-services">GTA Services</a>
+        <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer" class="nav-link nav-link--external" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.305-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" fill="currentColor"/></svg>
+        </a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Toggle navigation menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="wrapper" class="layout-wrapper">
+    <aside id="sidebar" class="retro-sidebar" role="navigation" aria-label="Documentation navigation">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <img src="../assets/images/morbidlytitle.png" alt="" class="sidebar-logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+            <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700" fill="#ff0000">MORBIDLY</text>
+            <text x="0" y="56" font-family="JetBrains Mono, monospace" font-size="9" font-weight="400" fill="#999">MODS</text>
+          </svg>
+        </div>
+        <button class="sidebar-close" aria-label="Close sidebar" hidden><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      </div>
+      <nav class="sidebar-nav">
+        <section class="sidebar-section" aria-labelledby="section-main">
+          <h3 id="section-main" class="sidebar-section-title">Main Hub</h3>
+          <ul class="sidebar-list">
+            <li><a href="../index.html" class="sidebar-link" data-page="home">Welcome</a></li>
+            <li><a href="tos.html" class="sidebar-link" data-page="tos">Terms of Service</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-bully">
+          <h3 id="section-bully" class="sidebar-section-title">Bully: Scholarship Edition (PC)</h3>
+          <ul class="sidebar-list">
+            <li><a href="getting-started.html" class="sidebar-link active" data-page="getting-started">Getting Started</a></li>
+            <li><a href="releases.html" class="sidebar-link" data-page="releases">Downloads</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-gta">
+          <h3 id="section-gta" class="sidebar-section-title">Grand Theft Auto V (XBOX SERIES X/S)</h3>
+          <ul class="sidebar-list">
+            <li><a href="gta-services.html" class="sidebar-link" data-page="gta-services">Account Services</a></li>
+            <li><a href="gta-show.html" class="sidebar-link" data-page="gta-show">Account Showcase</a></li>
+            <li><a href="account-security.html" class="sidebar-link" data-page="account-security">Account Security</a></li>
+            <li><a href="purchase.html" class="sidebar-link" data-page="purchase">Purchase</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-tools">
+          <h3 id="section-tools" class="sidebar-section-title">Utilities & Troubleshooting</h3>
+          <ul class="sidebar-list">
+            <li><a href="tools.html" class="sidebar-link" data-page="tools">Standalone Tools</a></li>
+            <li><a href="favorites.html" class="sidebar-link" data-page="favorites">Endorsed Mods & Favorites</a></li>
+            <li><a href="troubleshooting.html" class="sidebar-link" data-page="troubleshooting">Known Issues & Fixes</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-support">
+          <h3 id="section-support" class="sidebar-section-title">Support & Dev Info</h3>
+          <ul class="sidebar-list">
+            <li><a href="contact.html" class="sidebar-link" data-page="contact">Contact Information</a></li>
+            <li><a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer" class="sidebar-link sidebar-link--external">Buy Me Coffee?</a></li>
+          </ul>
+        </section>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-logo">
+          <img src="../assets/images/morbiddunce.png" alt="" class="footer-logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="30" r="28" stroke="#ff0000" stroke-width="2" fill="none"/>
+            <text x="30" y="36" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700" fill="#ff0000">M</text>
+          </svg>
+        </div>
+        <p class="sidebar-footer-text">Powered by Morbidly</p>
+      </div>
+    </aside>
+    <div class="sidebar-overlay" aria-hidden="true"></div>
+
+    <main id="entries" class="entries-grid" role="main">
+      <article class="content-page">
+        <header class="page-header">
+          <div class="page-breadcrumbs">
+            <a href="../index.html">Home</a>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span aria-current="page">Getting Started</span>
+          </div>
+          <h1 class="page-title">Getting Started with Bully SE Mods</h1>
+          <p class="page-description">Complete installation guide for scripts, retextures, and tools. Follow these steps to start modding Bully: Scholarship Edition.</p>
+        </header>
+
+        <div class="page-content">
+          <section class="content-section" id="prerequisites">
+            <h2>Prerequisites</h2>
+            <p>Before installing any mods, ensure you have:</p>
+            <ul class="checklist">
+              <li><strong>Bully: Scholarship Edition</strong> on Steam (PC)</li>
+              <li><strong>ScriptHookV</strong> or equivalent script loader</li>
+              <li><strong>Visual C++ Redistributables</strong> (2015-2022)</li>
+              <li>Backup of your <code>Bully.exe</code> and game files</li>
+            </ul>
+            <div class="warning-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <p>Always back up your game files before modding. Mods can cause instability or prevent the game from launching.</p>
+            </div>
+          </section>
+
+          <section class="content-section" id="installation">
+            <h2>Installation Methods</h2>
+
+            <article class="method-card">
+              <header class="method-header">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </div>
+                <div>
+                  <h3>Method 1: Script Loader (Recommended)</h3>
+                  <p class="method-meta">Best for .lua and .asi scripts</p>
+                </div>
+              </header>
+              <ol class="steps">
+                <li>Download the latest <a href="releases.html#script-loader">Script Loader</a> from our Downloads page</li>
+                <li>Extract the archive to your Bully SE installation folder:<br><code class="path">C:\Program Files (x86)\Steam\steamapps\common\Bully Scholarship Edition\</code></li>
+                <li>Place your <code>.lua</code> scripts in the <code>scripts/</code> folder</li>
+                <li>Place <code>.asi</code> plugins in the root game folder</li>
+                <li>Launch the game — scripts load automatically</li>
+              </ol>
+            </article>
+
+            <article class="method-card">
+              <header class="method-header">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <div>
+                  <h3>Method 2: Texture Replacement</h3>
+                  <p class="method-meta">For .txd and .dds retexture files</p>
+                </div>
+              </header>
+              <ol class="steps">
+                <li>Download <a href="releases.html#txd-tool">TXD Tool</a> from our Tools page</li>
+                <li>Open your game's <code>models/txd/</code> folder</li>
+                <li>Import the downloaded <code>.txd</code> or <code>.dds</code> files</li>
+                <li>Save and rebuild the archive</li>
+                <li>Test in-game</li>
+              </ol>
+            </article>
+          </section>
+
+          <section class="content-section" id="popular-mods">
+            <h2>Popular Starter Mods</h2>
+            <div class="mod-grid">
+              <article class="mod-card">
+                <div class="mod-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <h3>Kick Me Sign v2.0</h3>
+                <p>Adds the iconic "Kick Me" sign to Jimmy's back. Controller support included.</p>
+                <a href="releases.html#kick-me-sign" class="btn btn-secondary">Download</a>
+              </article>
+              <article class="mod-card">
+                <div class="mod-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Pitbull Bodyguards</h3>
+                <p>Loyal pitbull companions that follow and protect you. Custom behaviors.</p>
+                <a href="releases.html#pitbull-bodyguards" class="btn btn-secondary">Download</a>
+              </article>
+              <article class="mod-card">
+                <div class="mod-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 12H6"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <h3>Smoking Regen HP</h3>
+                <p>Controller-remapped script — smoking cigarettes regenerates health.</p>
+                <a href="releases.html#smoking-regen" class="btn btn-secondary">Download</a>
+              </article>
+            </div>
+          </section>
+
+          <section class="content-section" id="troubleshooting">
+            <h2>Common Issues</h2>
+            <details class="faq-item">
+              <summary>Game crashes on launch after installing mods</summary>
+              <p>Disable all mods, then re-enable one by one to identify the conflict. Check <a href="troubleshooting.html">Troubleshooting</a> for specific error codes.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Scripts not loading / nothing happens in-game</summary>
+              <p>Ensure Script Loader is installed correctly. Check that <code>scripts/</code> folder exists in your game directory. Verify .lua files have correct syntax.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Textures appear pink/missing</summary>
+              <p>This means the texture file wasn't imported correctly or the TXD archive is corrupted. Re-import using TXD Tool and ensure you saved the archive.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Controller inputs not working with scripts</summary>
+              <p>Some older scripts only support keyboard. Check the mod description for controller support. Our updated versions (v2.0+) include controller mappings.</p>
+            </details>
+          </section>
+
+          <section class="content-section" id="next-steps">
+            <h2>Next Steps</h2>
+            <div class="next-steps-grid">
+              <a href="releases.html" class="next-step-card">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <h3>Browse All Downloads</h3>
+                <p>View the complete library of available mods, scripts, and tools</p>
+              </a>
+              <a href="tools.html" class="next-step-card">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                <h3>Utilities & Tools</h3>
+                <p>TXD Tool, script editors, and standalone utilities</p>
+              </a>
+              <a href="troubleshooting.html" class="next-step-card">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <h3>Troubleshooting</h3>
+                <p>Known issues, fixes, and error code references</p>
+              </a>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <nav class="retro-nav-container" aria-label="Page navigation">
+        <a href="releases.html" class="retro-nav-btn btn-right" data-transition="slide">
+          <div class="nav-btn-text">
+            <span class="nav-label">Next</span>
+            <span class="nav-title">Mod Downloads</span>
+          </div>
+          <span class="nav-arrow" aria-hidden="true">›</span>
+        </a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="morbid-footer" role="contentinfo">
+    <div class="morbid-footer-inner">
+      <div class="morbid-logo">
+        <img src="../assets/images/morbidlymods.png" alt="Morbidly Mods" class="footer-logo-img" />
+        <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+          <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#ff0000">MORBIDLY</text>
+          <text x="0" y="58" font-family="JetBrains Mono, monospace" font-size="10" font-weight="400" fill="#999">MODS</text>
+        </svg>
+      </div>
+      <div class="footer-links">
+        <nav aria-label="Footer navigation">
+          <a href="contact.html">Contact</a>
+          <a href="tos.html">Terms of Service</a>
+          <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://discord.gg/Morbidly" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer">Support</a>
+        </nav>
+      </div>
+      <div class="footer-copyright">
+        <p>1998–2025 All Rights Reserved.</p>
+        <p id="c"><a href="#">© Morbidly</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

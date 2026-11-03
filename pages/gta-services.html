@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTA V Account Services — Morbidly Mods</title>
+  <meta name="description" content="Modded GTA V account services, showcases, and security information for Xbox Series X/S." />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="morbid-header" role="banner">
+    <div class="morbid-header-inner">
+      <div class="morbid-logo" aria-label="Morbidly Mods Home">
+        <a href="../index.html" class="logo-link">
+          <img src="../assets/images/morbidlytitle.png" alt="Morbidly Mods" class="logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+            <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#ff0000">MORBIDLY</text>
+            <text x="0" y="58" font-family="JetBrains Mono, monospace" font-size="10" font-weight="400" fill="#999">MODS</text>
+          </svg>
+        </a>
+      </div>
+      <div class="morbid-search" role="search">
+        <label for="site-search" class="visually-hidden">Search Morbidly Mods</label>
+        <input type="search" id="site-search" placeholder="Search mods, guides, tools..." aria-label="Search" autocomplete="off" />
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        <div class="search-results" id="searchResults" role="listbox" hidden></div>
+      </div>
+      <nav class="morbid-nav" role="navigation" aria-label="Main navigation">
+        <a href="../index.html" class="nav-link" data-page="home">Home</a>
+        <a href="getting-started.html" class="nav-link" data-page="getting-started">Getting Started</a>
+        <a href="releases.html" class="nav-link" data-page="releases">Downloads</a>
+        <a href="gta-services.html" class="nav-link active" data-page="gta-services">GTA Services</a>
+        <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer" class="nav-link nav-link--external" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.305-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" fill="currentColor"/></svg>
+        </a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Toggle navigation menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="wrapper" class="layout-wrapper">
+    <aside id="sidebar" class="retro-sidebar" role="navigation" aria-label="Documentation navigation">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <img src="../assets/images/morbidlytitle.png" alt="" class="sidebar-logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+            <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700" fill="#ff0000">MORBIDLY</text>
+            <text x="0" y="56" font-family="JetBrains Mono, monospace" font-size="9" font-weight="400" fill="#999">MODS</text>
+          </svg>
+        </div>
+        <button class="sidebar-close" aria-label="Close sidebar" hidden><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      </div>
+      <nav class="sidebar-nav">
+        <section class="sidebar-section" aria-labelledby="section-main">
+          <h3 id="section-main" class="sidebar-section-title">Main Hub</h3>
+          <ul class="sidebar-list">
+            <li><a href="../index.html" class="sidebar-link" data-page="home">Welcome</a></li>
+            <li><a href="tos.html" class="sidebar-link" data-page="tos">Terms of Service</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-bully">
+          <h3 id="section-bully" class="sidebar-section-title">Bully: Scholarship Edition (PC)</h3>
+          <ul class="sidebar-list">
+            <li><a href="getting-started.html" class="sidebar-link" data-page="getting-started">Getting Started</a></li>
+            <li><a href="releases.html" class="sidebar-link" data-page="releases">Downloads</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-gta">
+          <h3 id="section-gta" class="sidebar-section-title">Grand Theft Auto V (XBOX SERIES X/S)</h3>
+          <ul class="sidebar-list">
+            <li><a href="gta-services.html" class="sidebar-link active" data-page="gta-services">Account Services</a></li>
+            <li><a href="gta-show.html" class="sidebar-link" data-page="gta-show">Account Showcase</a></li>
+            <li><a href="account-security.html" class="sidebar-link" data-page="account-security">Account Security</a></li>
+            <li><a href="purchase.html" class="sidebar-link" data-page="purchase">Purchase</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-tools">
+          <h3 id="section-tools" class="sidebar-section-title">Utilities & Troubleshooting</h3>
+          <ul class="sidebar-list">
+            <li><a href="tools.html" class="sidebar-link" data-page="tools">Standalone Tools</a></li>
+            <li><a href="favorites.html" class="sidebar-link" data-page="favorites">Endorsed Mods & Favorites</a></li>
+            <li><a href="troubleshooting.html" class="sidebar-link" data-page="troubleshooting">Known Issues & Fixes</a></li>
+          </ul>
+        </section>
+        <section class="sidebar-section" aria-labelledby="section-support">
+          <h3 id="section-support" class="sidebar-section-title">Support & Dev Info</h3>
+          <ul class="sidebar-list">
+            <li><a href="contact.html" class="sidebar-link" data-page="contact">Contact Information</a></li>
+            <li><a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer" class="sidebar-link sidebar-link--external">Buy Me Coffee?</a></li>
+          </ul>
+        </section>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-logo">
+          <img src="../assets/images/morbiddunce.png" alt="" class="footer-logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="30" r="28" stroke="#ff0000" stroke-width="2" fill="none"/>
+            <text x="30" y="36" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700" fill="#ff0000">M</text>
+          </svg>
+        </div>
+        <p class="sidebar-footer-text">Powered by Morbidly</p>
+      </div>
+    </aside>
+    <div class="sidebar-overlay" aria-hidden="true"></div>
+
+    <main id="entries" class="entries-grid" role="main">
+      <article class="content-page">
+        <header class="page-header">
+          <div class="page-breadcrumbs">
+            <a href="../index.html">Home</a>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span aria-current="page">GTA V Services</span>
+          </div>
+          <h1 class="page-title">GTA V Account Services</h1>
+          <p class="page-description">Information about modded account services, showcases, and security for Grand Theft Auto V on Xbox Series X/S.</p>
+        </header>
+
+        <div class="page-content">
+          <!-- Service Status Alert -->
+          <div class="status-alert status-alert--warning">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <div>
+              <strong>Service Notice:</strong> Active account servicing is currently <strong>unavailable</strong>. This section remains for showcase and informational purposes only. Please see <a href="gta-show.html">Account Showcase</a> for previous work examples.
+            </div>
+          </div>
+
+          <section class="content-section" id="services-overview">
+            <h2>Available Services (Showcase Only)</h2>
+            <div class="services-grid">
+              <article class="service-card">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3>Modded Accounts</h3>
+                <p>Pre-leveled accounts with unlocked content, max stats, and custom configurations.</p>
+                <ul class="service-features">
+                  <li>Max Level / RP</li>
+                  <li>Unlocked Vehicles & Weapons</li>
+                  <li>Custom Outfits</li>
+                  <li>Money Packages</li>
+                </ul>
+                <a href="gta-show.html" class="btn btn-secondary">View Showcase</a>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Account Recovery</h3>
+                <p>Assistance with recovering compromised or banned accounts (when available).</p>
+                <ul class="service-features">
+                  <li>Ban Appeals</li>
+                  <li>Recovery Assistance</li>
+                  <li>Security Audits</li>
+                </ul>
+                <a href="account-security.html" class="btn btn-secondary">Learn More</a>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <h3>Custom Builds</h3>
+                <p>Tailored account configurations based on your playstyle preferences.</p>
+                <ul class="service-features">
+                  <li>PvP Optimized</li>
+                  <li>Grinder Builds</li>
+                  <li>Collector Sets</li>
+                </ul>
+                <button class="btn btn-ghost" disabled>Coming Soon</button>
+              </article>
+            </div>
+          </section>
+
+          <section class="content-section" id="showcase-preview">
+            <h2>Recent Showcase Highlights</h2>
+            <div class="showcase-grid">
+              <article class="showcase-card">
+                <div class="showcase-media">
+                  <img src="../assets/images/gta-showcase-1.jpg" alt="Modded account showcase" class="showcase-image" />
+                  <div class="showcase-media-fallback" aria-hidden="true">
+                    <svg viewBox="0 0 100 100"><rect fill="#111" width="100" height="100"/><text x="50" y="55" text-anchor="middle" font-size="12" fill="#333">GTA V<br/>SHOWCASE</text></svg>
+                  </div>
+                </div>
+                <div class="showcase-body">
+                  <h3>Nightclub Empire Build</h3>
+                  <p>Fully upgraded nightclub with all businesses, max storage, and optimized delivery routes.</p>
+                  <div class="showcase-stats">
+                    <span><strong>Level:</strong> 8000</span>
+                    <span><strong>Cash:</strong> $2.1B</span>
+                    <span><strong>K/D:</strong> 4.2</span>
+                  </div>
+                  <a href="gta-show.html#nightclub-empire" class="btn btn-secondary">View Details</a>
+                </div>
+              </article>
+
+              <article class="showcase-card">
+                <div class="showcase-media">
+                  <img src="../assets/images/gta-showcase-2.jpg" alt="Vehicle collection showcase" class="showcase-image" />
+                  <div class="showcase-media-fallback" aria-hidden="true">
+                    <svg viewBox="0 0 100 100"><rect fill="#111" width="100" height="100"/><text x="50" y="55" text-anchor="middle" font-size="12" fill="#333">VEHICLE<br/>COLLECTION</text></svg>
+                  </div>
+                </div>
+                <div class="showcase-body">
+                  <h3>Complete Vehicle Collection</h3>
+                  <p>Every purchasable vehicle in the game, fully customized with max performance upgrades.</p>
+                  <div class="showcase-stats">
+                    <span><strong>Vehicles:</strong> 600+</span>
+                    <span><strong>Garages:</strong> Maxed</span>
+                    <span><strong>Custom:</strong> All</span>
+                  </div>
+                  <a href="gta-show.html#vehicle-collection" class="btn btn-secondary">View Details</a>
+                </div>
+              </article>
+            </div>
+            <p class="text-center"><a href="gta-show.html" class="btn btn-primary">View Full Showcase</a></p>
+          </section>
+
+          <section class="content-section" id="security-notice">
+            <h2>Security & Safety</h2>
+            <div class="warning-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <div>
+                <h3>Important Security Information</h3>
+                <p>Modded accounts carry inherent risks. Rockstar Games actively monitors for modified accounts and may issue bans. We strongly recommend:</p>
+                <ul>
+                  <li>Using a secondary account for modded content</li>
+                  <li>Enabling 2FA on your Rockstar Social Club</li>
+                  <li>Never sharing login credentials</li>
+                  <li>Reading our <a href="account-security.html">Account Security Guide</a> thoroughly</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="content-section" id="related">
+            <h2>Related Pages</h2>
+            <div class="next-steps-grid">
+              <a href="gta-show.html" class="next-step-card">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                <h3>Account Showcase</h3>
+                <p>Browse previous account builds and configurations</p>
+              </a>
+              <a href="account-security.html" class="next-step-card">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <h3>Account Security</h3>
+                <p>Best practices for protecting your accounts</p>
+              </a>
+              <a href="purchase.html" class="next-step-card">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <h3>Purchase Info</h3>
+                <p>Pricing and purchase process (when available)</p>
+              </a>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <nav class="retro-nav-container" aria-label="Page navigation">
+        <a href="account-security.html" class="retro-nav-btn btn-right" data-transition="slide">
+          <div class="nav-btn-text">
+            <span class="nav-label">Next</span>
+            <span class="nav-title">Account Security</span>
+          </div>
+          <span class="nav-arrow" aria-hidden="true">›</span>
+        </a>
+      </nav>
+    </main>
+  </div>
+
+  <footer class="morbid-footer" role="contentinfo">
+    <div class="morbid-footer-inner">
+      <div class="morbid-logo">
+        <img src="../assets/images/morbidlymods.png" alt="Morbidly Mods" class="footer-logo-img" />
+        <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+          <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#ff0000">MORBIDLY</text>
+          <text x="0" y="58" font-family="JetBrains Mono, monospace" font-size="10" font-weight="400" fill="#999">MODS</text>
+        </svg>
+      </div>
+      <div class="footer-links">
+        <nav aria-label="Footer navigation">
+          <a href="contact.html">Contact</a>
+          <a href="tos.html">Terms of Service</a>
+          <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://discord.gg/Morbidly" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer">Support</a>
+        </nav>
+      </div>
+      <div class="footer-copyright">
+        <p>1998–2025 All Rights Reserved.</p>
+        <p id="c"><a href="#">© Morbidly</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

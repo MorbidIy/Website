@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morbidly Mods</title>
+  <meta name="description" content="Morbidly Mods - Mods, scripts, and tools for Bully: Scholarship Edition and GTA V" />
+  <meta name="keywords" content="Morbidly, Bully SE, GTA V, mods, scripts, modded accounts" />
+  <meta name="author" content="Morbidly Mods" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- =======================================================================
+       FIXED TOP HEADER NAVIGATION BAR
+       ======================================================================= -->
+  <header class="morbid-header" role="banner">
+    <div class="morbid-header-inner">
+      <!-- Site Branding Header Logo -->
+      <div class="morbid-logo" aria-label="Morbidly Mods Home">
+        <a href="index.html" class="logo-link">
+          <img src="assets/images/morbidlytitle.png" alt="Morbidly Mods" class="logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+            <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#ff0000">MORBIDLY</text>
+            <text x="0" y="58" font-family="JetBrains Mono, monospace" font-size="10" font-weight="400" fill="#999">MODS</text>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Global Site Search Field Input Box -->
+      <div class="morbid-search" role="search">
+        <label for="site-search" class="visually-hidden">Search Morbidly Mods</label>
+        <input type="search" id="site-search" placeholder="Search mods, guides, tools..." aria-label="Search" autocomplete="off" />
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        <div class="search-results" id="searchResults" role="listbox" hidden></div>
+      </div>
+
+      <!-- Header Fast-Link Shortcut Navigation Paths -->
+      <nav class="morbid-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active" data-page="home">Home</a>
+        <a href="pages/getting-started.html" class="nav-link" data-page="getting-started">Getting Started</a>
+        <a href="pages/releases.html" class="nav-link" data-page="releases">Downloads</a>
+        <a href="pages/gta-services.html" class="nav-link" data-page="gta-services">GTA Services</a>
+        <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer" class="nav-link nav-link--external" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.305-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" fill="currentColor"/></svg>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Toggle navigation menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =======================================================================
+       GLOBAL WORKSPACE LAYOUT CONTAINER WRAPPER
+       ======================================================================= -->
+  <div id="wrapper" class="layout-wrapper">
+
+    <!-- ===================================================================
+         LEFT HAND FIXED RETRO-SIDEBAR COMPONENT
+         =================================================================== -->
+    <aside id="sidebar" class="retro-sidebar" role="navigation" aria-label="Documentation navigation">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <img src="assets/images/morbidlytitle.png" alt="" class="sidebar-logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+            <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700" fill="#ff0000">MORBIDLY</text>
+            <text x="0" y="56" font-family="JetBrains Mono, monospace" font-size="9" font-weight="400" fill="#999">MODS</text>
+          </svg>
+        </div>
+        <button class="sidebar-close" aria-label="Close sidebar" hidden><svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <!-- Category Section: Main Hub Navigation Links -->
+        <section class="sidebar-section" aria-labelledby="section-main">
+          <h3 id="section-main" class="sidebar-section-title">Main Hub</h3>
+          <ul class="sidebar-list">
+            <li><a href="index.html" class="sidebar-link active" data-page="home">Welcome</a></li>
+            <li><a href="pages/tos.html" class="sidebar-link" data-page="tos">Terms of Service</a></li>
+          </ul>
+        </section>
+
+        <!-- Category Section: Bully: Scholarship Edition (PC) -->
+        <section class="sidebar-section" aria-labelledby="section-bully">
+          <h3 id="section-bully" class="sidebar-section-title">Bully: Scholarship Edition (PC)</h3>
+          <ul class="sidebar-list">
+            <li><a href="pages/getting-started.html" class="sidebar-link" data-page="getting-started">Getting Started</a></li>
+            <li><a href="pages/releases.html" class="sidebar-link" data-page="releases">Downloads</a></li>
+          </ul>
+        </section>
+
+        <!-- Category Section: Grand Theft Auto V Information Links -->
+        <section class="sidebar-section" aria-labelledby="section-gta">
+          <h3 id="section-gta" class="sidebar-section-title">Grand Theft Auto V (XBOX SERIES X/S)</h3>
+          <ul class="sidebar-list">
+            <li><a href="pages/gta-services.html" class="sidebar-link" data-page="gta-services">Account Services</a></li>
+            <li><a href="pages/gta-show.html" class="sidebar-link" data-page="gta-show">Account Showcase</a></li>
+            <li><a href="pages/account-security.html" class="sidebar-link" data-page="account-security">Account Security</a></li>
+            <li><a href="pages/purchase.html" class="sidebar-link" data-page="purchase">Purchase</a></li>
+          </ul>
+        </section>
+
+        <!-- Category Section: Tools & Diagnostic Links -->
+        <section class="sidebar-section" aria-labelledby="section-tools">
+          <h3 id="section-tools" class="sidebar-section-title">Utilities & Troubleshooting</h3>
+          <ul class="sidebar-list">
+            <li><a href="pages/tools.html" class="sidebar-link" data-page="tools">Standalone Tools</a></li>
+            <li><a href="pages/favorites.html" class="sidebar-link" data-page="favorites">Endorsed Mods & Favorites</a></li>
+            <li><a href="pages/troubleshooting.html" class="sidebar-link" data-page="troubleshooting">Known Issues & Fixes</a></li>
+          </ul>
+        </section>
+
+        <!-- Category Section: Author Info & Creator Support links -->
+        <section class="sidebar-section" aria-labelledby="section-support">
+          <h3 id="section-support" class="sidebar-section-title">Support & Dev Info</h3>
+          <ul class="sidebar-list">
+            <li><a href="pages/contact.html" class="sidebar-link" data-page="contact">Contact Information</a></li>
+            <li><a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer" class="sidebar-link sidebar-link--external">Buy Me Coffee?</a></li>
+          </ul>
+        </section>
+      </nav>
+
+      <!-- Sidebar Custom Credit Footer Notice -->
+      <div class="sidebar-footer">
+        <div class="sidebar-footer-logo">
+          <img src="assets/images/morbiddunce.png" alt="" class="footer-logo-img" />
+          <svg class="logo-fallback" viewBox="0 0 60 60" aria-hidden="true">
+            <circle cx="30" cy="30" r="28" stroke="#ff0000" stroke-width="2" fill="none"/>
+            <text x="30" y="36" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700" fill="#ff0000">M</text>
+          </svg>
+        </div>
+        <p class="sidebar-footer-text">Powered by Morbidly</p>
+      </div>
+    </aside>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" aria-hidden="true"></div>
+
+    <!-- ===================================================================
+         MAIN CONTENT CARD DISPLAY STREAM TRACK
+         =================================================================== -->
+    <main id="entries" class="entries-grid" role="main">
+      <!-- ===============================================================
+           HERO / LANDING SECTION
+           =============================================================== -->
+      <section id="hero" class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <div class="hero-badge">Documentation & Mods Hub</div>
+          <h1 id="hero-title" class="hero-title">Morbidly Mods</h1>
+          <p class="hero-subtitle">Custom mods, scripts, and tools for <strong>Bully: Scholarship Edition</strong> and <strong>GTA V</strong>. Documentation, downloads, and community resources.</p>
+          <div class="hero-actions">
+            <a href="pages/getting-started.html" class="btn btn-primary">Get Started</a>
+            <a href="pages/releases.html" class="btn btn-secondary">View Downloads</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value" data-count="15">0</span>
+              <span class="stat-label">Mods Released</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" data-count="8">0</span>
+              <span class="stat-label">Guides Written</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" data-count="1200">0</span>
+              <span class="stat-label">Community Members</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/morbidlymods.png" alt="Morbidly Mods Banner" class="hero-image" />
+            <div class="hero-image-fallback" aria-hidden="true">
+              <svg viewBox="0 0 400 200"><rect fill="#111" width="400" height="200"/><text x="200" y="100" text-anchor="middle" font-family="Space Grotesk" font-size="24" fill="#333">MORBIDLY MODS</text></svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===============================================================
+           FEATURED CARDS GRID
+           =============================================================== -->
+      <section class="featured-section" aria-labelledby="featured-title">
+        <header class="section-header">
+          <h2 id="featured-title" class="section-title">Quick Access</h2>
+          <p class="section-subtitle">Jump straight to what you need</p>
+        </header>
+        <div class="featured-grid">
+          <article class="card card-featured" data-page="getting-started">
+            <div class="card-media">
+              <img src="assets/images/card-getting-started.jpg" alt="" class="card-image" />
+              <div class="card-media-fallback" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="20" stroke="#ff0000" stroke-width="4" fill="none"/><path d="M50 30v20M50 50h20" stroke="#ff0000" stroke-width="4" stroke-linecap="round"/></svg></div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Bully SE</span>
+              <h3 class="card-title">Getting Started</h3>
+              <p class="card-description">New to modding? Step-by-step installation guides for scripts, skins, and tools.</p>
+              <a href="pages/getting-started.html" class="card-link">Read Guide <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card card-featured" data-page="releases">
+            <div class="card-media">
+              <img src="assets/images/card-downloads.jpg" alt="" class="card-image" />
+              <div class="card-media-fallback" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 20L30 40h40z" stroke="#ff0000" stroke-width="4" fill="none"/><rect x="40" y="40" width="20" height="40" stroke="#ff0000" stroke-width="4" fill="none"/></svg></div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Downloads</span>
+              <h3 class="card-title">Mod Releases</h3>
+              <p class="card-description">Browse all available mods, scripts, and retextures for Bully SE.</p>
+              <a href="pages/releases.html" class="card-link">View All <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card card-featured" data-page="gta-services">
+            <div class="card-media">
+              <img src="assets/images/cta-gta.jpg" alt="" class="card-image" />
+              <div class="card-media-fallback" aria-hidden="true"><svg viewBox="0 0 100 100"><rect x="15" y="20" width="70" height="60" rx="5" stroke="#ff0000" stroke-width="4" fill="none"/><circle cx="50" cy="50" r="15" stroke="#ff0000" stroke-width="3" fill="none"/></svg></div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">GTA V</span>
+              <h3 class="card-title">Account Services</h3>
+              <p class="card-description">Modded accounts, unlocks, and recovery services (currently showcase only).</p>
+              <a href="pages/gta-services.html" class="card-link">Showcase <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+            </div>
+          </article>
+
+          <article class="card card-featured" data-page="tools">
+            <div class="card-media">
+              <img src="assets/images/card-tools.jpg" alt="" class="card-image" />
+              <div class="card-media-fallback" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M20 50h60M50 20v60" stroke="#ff0000" stroke-width="4" stroke-linecap="round"/></svg></div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Utilities</span>
+              <h3 class="card-title">Tools & Fixes</h3>
+              <p class="card-description">Standalone tools, troubleshooting guides, and known issue fixes.</p>
+              <a href="pages/tools.html" class="card-link">Explore <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===============================================================
+           LATEST UPDATES / NEWS SECTION
+           =============================================================== -->
+      <section class="updates-section" aria-labelledby="updates-title">
+        <header class="section-header">
+          <h2 id="updates-title" class="section-title">Latest Updates</h2>
+          <p class="section-subtitle">Recent mods, guides, and announcements</p>
+        </header>
+        <div class="updates-grid" id="updatesGrid">
+          <!-- Dynamically populated or static cards -->
+          <article class="card card-update">
+            <div class="card-media">
+              <img src="assets/images/update-1.jpg" alt="" class="card-image" />
+              <div class="card-media-fallback" aria-hidden="true"><svg viewBox="0 0 100 100"><text x="50" y="60" text-anchor="middle" font-size="40">📝</text></svg></div>
+            </div>
+            <div class="card-body">
+              <time class="card-date" datetime="2025-01-15">Jan 15, 2025</time>
+              <h3 class="card-title"><a href="pages/releases.html#kick-me-sign">Kick Me Sign Mod v2.0</a></h3>
+              <p class="card-description">Updated with controller support and new animations. Based on CombineSlayer24's original work.</p>
+              <a href="pages/releases.html#kick-me-sign" class="card-link">Read More</a>
+            </div>
+          </article>
+
+          <article class="card card-update">
+            <div class="card-media">
+              <img src="assets/images/update-2.jpg" alt="" class="card-image" />
+              <div class="card-media-fallback" aria-hidden="true"><svg viewBox="0 0 100 100"><text x="50" y="60" text-anchor="middle" font-size="40">🐕</text></svg></div>
+            </div>
+            <div class="card-body">
+              <time class="card-date" datetime="2025-01-08">Jan 8, 2025</time>
+              <h3 class="card-title"><a href="pages/releases.html#pitbull-bodyguards">Pitbull Bodyguards Mod</a></h3>
+              <p class="card-description">Custom pitbull bodyguards that follow and protect you. Inspired by seigimonogatari's mod.</p>
+              <a href="pages/releases.html#pitbull-bodyguards" class="card-link">Read More</a>
+            </div>
+          </article>
+
+          <article class="card card-update">
+            <div class="card-media">
+              <img src="assets/images/update-3.jpg" alt="" class="card-image" />
+              <div class="card-media-fallback" aria-hidden="true"><svg viewBox="0 0 100 100"><text x="50" y="60" text-anchor="middle" font-size="40">🚬</text></svg></div>
+            </div>
+            <div class="card-body">
+              <time class="card-date" datetime="2025-01-02">Jan 2, 2025</time>
+              <h3 class="card-title"><a href="pages/releases.html#smoking-regen">Smoking Regen HP Script</a></h3>
+              <p class="card-description">Controller-remapped version of tupakka1's script. Smoking now regenerates health.</p>
+              <a href="pages/releases.html#smoking-regen" class="card-link">Read More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===============================================================
+           RETRO-WIKI COHESIVE DUAL NAVIGATION BUTTONS BLOCK
+           =============================================================== -->
+      <nav class="retro-nav-container" aria-label="Page navigation">
+        <a href="pages/tos.html" class="retro-nav-btn btn-right" data-transition="slide">
+          <div class="nav-btn-text">
+            <span class="nav-label">Next</span>
+            <span class="nav-title">Terms of Service</span>
+          </div>
+          <span class="nav-arrow" aria-hidden="true">›</span>
+        </a>
+      </nav>
+    </main>
+  </div>
+
+  <!-- =======================================================================
+       GLOBAL PAGE STATIC BASELINE FOOTER COMPONENT
+       ======================================================================= -->
+  <footer class="morbid-footer" role="contentinfo">
+    <div class="morbid-footer-inner">
+      <div class="morbid-logo">
+        <img src="assets/images/morbidlymods.png" alt="Morbidly Mods" class="footer-logo-img" />
+        <svg class="logo-fallback" viewBox="0 0 200 60" aria-hidden="true">
+          <text x="0" y="42" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#ff0000">MORBIDLY</text>
+          <text x="0" y="58" font-family="JetBrains Mono, monospace" font-size="10" font-weight="400" fill="#999">MODS</text>
+        </svg>
+      </div>
+
+      <div class="footer-links">
+        <nav aria-label="Footer navigation">
+          <a href="pages/contact.html">Contact</a>
+          <a href="pages/tos.html">Terms of Service</a>
+          <a href="https://github.com/Morbidly" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://discord.gg/Morbidly" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a href="https://ko-fi.com/dead.fvck" target="_blank" rel="noopener noreferrer">Support</a>
+        </nav>
+      </div>
+
+      <div class="footer-copyright">
+        <p>1998–2025 All Rights Reserved.</p>
+        <p id="c"><a href="#">© Morbidly</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
